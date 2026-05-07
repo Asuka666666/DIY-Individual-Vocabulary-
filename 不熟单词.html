@@ -293,6 +293,28 @@
             margin: 16px 0;
         }
 
+        .test-mark-btn {
+            align-self: center;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 999px;
+            background: rgba(31, 93, 143, 0.12);
+            color: #1f5d8f;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .test-mark-btn:hover {
+            background: rgba(31, 93, 143, 0.2);
+        }
+
+        .test-mark-btn.marked {
+            background: #ff6b6b;
+            color: #fff;
+        }
+
         .test-options {
             display: flex;
             flex-direction: column;
@@ -1342,6 +1364,7 @@
                     <div class="test-question">
                         <h3>请选择词汇的含义</h3>
                         <div class="test-word">${word.word}</div>
+                        <button type="button" class="test-mark-btn" id="testMarkBtn">标记此词</button>
                     </div>
                     <div class="test-options" id="optionsContainer">
                         ${allAnswers.map((answer, idx) => `
@@ -1353,6 +1376,19 @@
                     <div id="answerDisplay"></div>
                     <div class="test-buttons" id="actionButtons"></div>
                 `;
+
+                const testMarkBtn = document.getElementById("testMarkBtn");
+                const syncTestMarkBtn = () => {
+                    const marked = isWordMarked(word.word);
+                    testMarkBtn.textContent = marked ? "取消标记" : "标记此词";
+                    testMarkBtn.classList.toggle("marked", marked);
+                };
+
+                syncTestMarkBtn();
+                testMarkBtn.addEventListener("click", () => {
+                    setMarkedState(word.word, !isWordMarked(word.word));
+                    syncTestMarkBtn();
+                });
 
                 // 选项点击事件
                 document.querySelectorAll(".test-option").forEach(option => {
@@ -1382,21 +1418,9 @@
                             }, 120);
                         } else {
                             answerDisplay.innerHTML = `<div class="test-answer show-answer" style="background: rgba(255, 107, 107, 0.1); border-left-color: #ff6b6b;">✗ 错误。正确答案是：<br><strong>${word.shortMeaning}</strong></div>`;
-
-                            const initiallyMarked = isWordMarked(word.word);
                             actionButtons.innerHTML = `
-                                <button type="button" class="btn-show-answer ${initiallyMarked ? "marked" : ""}" id="markFromTestBtn">${initiallyMarked ? "取消标记" : "标记此词"}</button>
                                 <button type="button" class="btn-next" id="nextBtn">下一题</button>
                             `;
-
-                            const markFromTestBtn = document.getElementById("markFromTestBtn");
-                            markFromTestBtn.addEventListener("click", () => {
-                                const nowMarked = isWordMarked(word.word);
-                                setMarkedState(word.word, !nowMarked);
-                                const updated = isWordMarked(word.word);
-                                markFromTestBtn.textContent = updated ? "取消标记" : "标记此词";
-                                markFromTestBtn.classList.toggle("marked", updated);
-                            });
 
                             document.getElementById("nextBtn").addEventListener("click", () => {
                                 currentTest.currentIndex++;
