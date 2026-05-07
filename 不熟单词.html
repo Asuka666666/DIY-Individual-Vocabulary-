@@ -89,6 +89,13 @@
             color: var(--muted);
         }
 
+        .hero-actions {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
         .word-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -162,7 +169,7 @@
 
         /* 测验功能样式 */
         .test-btn {
-            margin-top: 14px;
+            margin-top: 0;
             padding: 10px 20px;
             border: none;
             border-radius: 12px;
@@ -182,6 +189,15 @@
 
         .test-btn:active {
             transform: translateY(0);
+        }
+
+        .dictation-btn {
+            background: linear-gradient(135deg, #d9652a 0%, #f2a24f 100%);
+            box-shadow: 0 4px 12px rgba(217, 101, 42, 0.3);
+        }
+
+        .dictation-btn:hover {
+            box-shadow: 0 6px 16px rgba(217, 101, 42, 0.4);
         }
 
         #testSetupDialog {
@@ -396,6 +412,39 @@
         .test-result {
             text-align: center;
             padding: 30px 20px;
+        }
+
+        .dictation-meaning {
+            padding: 12px 14px;
+            border-radius: 12px;
+            background: rgba(31, 93, 143, 0.08);
+            color: #17334d;
+            font-size: 15px;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        .dictation-input {
+            width: 100%;
+            margin-top: 12px;
+            padding: 12px 14px;
+            border: 1px solid rgba(31, 93, 143, 0.2);
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .dictation-input:focus {
+            outline: none;
+            border-color: #1f5d8f;
+            box-shadow: 0 0 0 3px rgba(31, 93, 143, 0.12);
+        }
+
+        .dictation-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 16px;
+            flex-wrap: wrap;
         }
 
         .result-score {
@@ -912,7 +961,18 @@
 <details> <summary>stagnant </summary><h4>音标</h4><p>/ˈstægnənt/</p> <h4>核心释义</h4> <p>停滞的；萧条的；污浊不流动的</p> <h4>详细释义</h4> <ul> <li>本义指水体静止不流动、污浊变质，缺乏循环更新。</li> <li>引申形容经济、行业、发展等停滞不前、毫无增长与活力。</li> <li>亦可指思想、生活状态一成不变、沉闷僵化，缺乏进步与变化。</li> </ul> <h4>派生词</h4> <ul> <li>stagnate /ˈstæɡneɪt/ v. 停滞；萧条；不再发展</li> <li>stagnation /stæɡˈneɪʃn/ n. 停滞状态；经济萧条</li> </ul> <h4>近义词</h4> <ul> <li>sluggish：行动迟缓、活力不足，多用于经济、节奏、运行状态</li> <li>static：静止不变的，强调无变化、无波动</li> <li>dormant：休眠的、蛰伏的，侧重暂时停止活动</li> <li>depressed：经济低迷萧条的，侧重行情不景气</li> </ul> <h4>词组搭配</h4> <ul> <li>stagnant water（死水，如 Stagnant water breeds mosquitoes 死水容易滋生蚊虫）</li> <li>stagnant economy（萧条的经济，如 The region has a long-term stagnant economy 该地区经济长期萧条）</li> <li>stagnant growth（增长停滞，如 The company faced stagnant growth last year 这家公司去年增长停滞）</li> <li>stagnant market（低迷的市场，如 High costs led to a stagnant market 高成本导致市场低迷）</li> <li>stagnant life（一成不变的生活，如 He was tired of his stagnant life 他厌倦了一成不变的生活）</li> </ul> <h4>词源</h4> <p>源自拉丁语 stagnare（积水、停滞），词根 stag- 表示“静止、滞留”。最初用于描述静止积水，后逐步延伸至经济、社会、思想等抽象领域，书面与正式语境高频使用。</p> <h4>同根词</h4> <ul> <li>stagnation /stæɡˈneɪʃn/ n. 停滞，萧条</li> <li>stagnate /ˈstæɡneɪt/ v. 停滞，衰落</li> </ul> <h4>例句</h4> <ul> <li>Stagnant water in the garden must be cleaned regularly.（花园里的死水必须定期清理。）</li> <li>Wages have remained stagnant for over a decade.（十多年来工资一直停滞不前。）</li> <li>Without innovation, the whole industry will become stagnant.（缺乏创新，整个行业都会陷入停滞。）</li> </ul> </details>
 <details> <summary>mitigate </summary><h4>音标</h4><p>/ˈmɪtəˌgeɪt/</p> <h4>核心释义</h4> <p>减轻；缓和；缓解</p> <h4>详细释义</h4> <ul> <li>侧重降低伤害、风险、痛苦、负面影响的强度与程度，而非彻底消除。</li> <li>多用于负面事物，如灾难、风险、冲突、疼痛、压力、恶劣影响等。</li> <li>正式书面用词，常见学术、新闻、政策、环境与医疗类文本。</li> </ul> <h4>派生词</h4> <ul> <li>mitigation /ˌmɪtɪˈɡeɪʃn/ n. 减轻；缓解；补救措施</li> <li>mitigable /ˈmɪtɪɡəbl/ adj. 可减轻的、可缓和的</li> </ul> <h4>近义词</h4> <ul> <li>alleviate：多指减轻痛苦、压力、贫困等负面感受与困境</li> <li>relieve：侧重解除不适、痛苦、负担，日常使用更广</li> <li>lessen：通用用词，泛指数量、程度、强度变少变弱</li> <li>diminish：强调逐步减弱、缩小，可用于抽象力量与影响</li> </ul> <h4>词组搭配</h4> <ul> <li>mitigate risks（降低风险，如 We need measures to mitigate potential risks 我们需要措施降低潜在风险）</li> <li>mitigate damage（减轻损害，如 Early action can mitigate environmental damage 及早行动可减轻环境破坏）</li> <li>mitigate climate change（缓解气候变化，如 New policies help mitigate climate change 新政策助力缓解气候变化）</li> <li>mitigate pain（缓和疼痛，如 The drug can effectively mitigate physical pain 该药物能有效缓解身体疼痛）</li> <li>mitigate conflicts（缓和冲突，如 Dialogue helps mitigate regional conflicts 对话有助于缓和地区冲突）</li> </ul> <h4>词源</h4> <p>源自拉丁语 mitigare，由 mitis（温和的、柔软的）+ agere（驱使、做）构成，本义“使变温和”。中世纪进入英语，由形容性情温和，逐步引申为减轻负面事物的危害。</p> <h4>同根词</h4> <ul> <li>mild /maɪld/ adj. 温和的、轻微的，同根词根 mit- 表温和</li> <li>mollify /ˈmɒlɪfaɪ/ v. 安抚、使缓和，语义高度相近</li> <li>moderate /ˈmɒdərət/ adj. 适度的、温和的</li> </ul> <h4>例句</h4> <ul> <li>Trees can mitigate the harmful effects of air pollution.（树木能够减轻空气污染带来的有害影响。）</li> <li>The government took steps to mitigate the rising cost of living.（政府采取措施缓解不断上涨的生活成本。）</li> <li>Proper planning will help mitigate the impact of the crisis.（合理规划有助于缓和这场危机的冲击。）</li> </ul> </details>
 <details> <summary>mimic</summary><h4>音标</h4><p>/ˈmɪmɪk/</p> <h4>核心释义</h4> <p>v. 模仿；效仿；伪装  adj. 模仿的；模拟的</p> <h4>详细释义</h4> <ul> <li>指刻意模仿他人的言行、声音、神态或事物外观，常带有戏谑或复刻意味。</li> <li>生物层面可表示拟态，动植物伪装成周边环境或其他生物以自保。</li> <li>可指事物仿造、复刻某种特征，起到模拟、替代的作用。</li> </ul> <h4>派生词</h4> <ul> <li>mimicry /ˈmɪmɪkri/ n. 模仿；（生物）拟态</li> <li>mimicking /ˈmɪmɪkɪŋ/ n./v. 模仿；效仿</li> </ul> <h4>近义词</h4> <ul> <li>imitate：通用用词，泛指模仿言行、风格、行为</li> <li>copy：侧重照搬、复刻，强调完全复制</li> <li>ape：刻意拙劣地模仿，含贬义</li> <li>simulate：模拟仿真，多用于科技、实验场景</li> </ul> <h4>词组搭配</h4> <ul> <li>mimic one’s voice（模仿某人的声音，He can mimic his teacher’s voice perfectly）</li> <li>mimic natural conditions（模拟自然环境，The lab can mimic natural weather）</li> <li>biological mimicry（生物拟态，Butterflies rely on biological mimicry to avoid enemies）</li> <li>mimic symptoms（伪装症状，Some patients may mimic physical illness）</li> <li>mimic the trend（跟风效仿，Many brands mimic the latest fashion trend）</li> </ul> <h4>词源</h4> <p>源自希腊语 <i>mimos</i>（模仿者、哑剧演员），经由拉丁语传入英语。最初指戏剧中的模仿表演，后延伸为普通模仿、生物拟态与人工模拟等含义。</p> <h4>同根词</h4> <ul> <li>mime /maɪm/ n./v. 哑剧；做手势模仿</li> <li>mimosa /mɪˈməʊzə/ n. 含羞草，词根含“敏感、模仿收缩”之意</li> </ul> <h4>例句</h4> <ul> <li>Children often mimic the behavior of adults.（小孩子常常模仿成年人的行为。）</li> <li>This chemical can mimic the function of natural hormones.（这种化学物质可以模拟天然激素的作用。）</li> <li>Some insects mimic leaves to hide from predators.（部分昆虫拟态成树叶，躲避天敌。）</li> </ul> </details>
-
+<details> <summary>analogy</summary><h4>音标</h4><p>/əˈnælədʒi/</p> <h4>核心释义</h4><p>n. 类比；类推；相似；比拟</p> <h4>详细释义</h4> <ul> <li>指将两个不同事物进行对比，借助相似点解释、推理或说明道理。</li> <li>逻辑学中指类比推理，由已知事物特征推导同类未知事物。</li> <li>科学、日常语境下可指事物间的相似性、对应关系。</li> </ul> <h4>派生词</h4> <ul> <li>analogous /əˈnæləɡəs/ adj. 相似的；类比的</li> <li>analogize /əˈnæləˌdʒaɪz/ v. 类比；类推</li> </ul> <h4>近义词</h4> <ul> <li>comparison：泛指对比、比较，适用范围更广</li> <li>resemblance：侧重外形、特征的相似、相像</li> <li>likeness：指外观或性质上的相近、雷同</li> <li>metaphor：比喻，侧重修辞层面的隐喻表达</li> </ul> <h4>词组搭配</h4> <ul> <li>draw an analogy（做类比、进行比拟，We can draw an analogy between the two systems）</li> <li>by analogy（以此类推；用类比法，It is easy to understand by analogy）</li> <li>analogy to/with sth（与某物的相似性，There is a close analogy to human society）</li> <li>reason by analogy（类比推理，Scientists often reason by analogy）</li> <li>force an analogy（牵强附会的类比，Don’t force an analogy in your argument）</li> </ul> <h4>词源</h4> <p>源自希腊语 <i>analogia</i>（比例、对应关系），由前缀 ana-（按照）+ logos（比例、道理）构成，经拉丁语、法语传入英语，最初指数学比例关系，后延伸为广义类比与相似概念。</p> <h4>同根词</h4> <ul> <li>analogue /ˈænəlɒɡ/ n. 类似物；模拟物 adj. 模拟的</li> <li>logic /ˈlɒdʒɪk/ n. 逻辑；逻辑学</li> </ul> <h4>例句</h4> <ul> <li>He used a simple analogy to explain the complex theory.（他用简单的类比解释了复杂的理论。）</li> <li>The teacher made an analogy between water flow and electric current.（老师将水流和电流做了类比。）</li> <li>The analogy between the two cases helps us find a solution.（这两个案例的相似性有助于我们找到解决方案。）</li> </ul> </details>
+<details> <summary>inductive</summary><h4>音标</h4><p>/ɪnˈdʌktɪv/</p> <h4>核心释义</h4><p>adj. 归纳的；感应的；诱导的</p> <h4>详细释义</h4> <ul> <li>逻辑学上指归纳法的，由个别事实推导出普遍结论的思维方式。</li> <li>物理领域表示电磁感应的，利用感应原理产生能量或作用的。</li> <li>通用语境指诱导性的、引导产生某种状态或反应的。</li> </ul> <h4>派生词</h4> <ul> <li>induce /ɪnˈdjuːs/ v. 诱导；引起；归纳；感应</li> <li>induction /ɪnˈdʌkʃn/ n. 归纳法；感应；入职仪式</li> </ul> <h4>近义词</h4> <ul> <li>inferential：推理的、推论性的</li> <li>empirical：实证的，基于经验归纳的</li> <li>magnetic：磁的，电磁感应相关近义</li> </ul> <h4>词组搭配</h4> <ul> <li>inductive reasoning 归纳推理</li> <li>inductive method 归纳法</li> <li>inductive coil 感应线圈</li> <li>inductive effect 诱导效应；感应效应</li> <li>inductive logic 归纳逻辑</li> </ul> <h4>词源</h4> <p>源自拉丁语 <i>inducere</i>（引入、引导），由 in-（进入）+ ducere（引导）构成，后衍生出归纳、感应、诱导多重含义，广泛用于逻辑、物理、化学等学科。</p> <h4>同根词</h4> <ul> <li>deduce v. 演绎；推断</li> <li>conduct v. 引导；传导</li> <li>produce v. 生产；引出</li> </ul> <h4>例句</h4> <ul> <li>Inductive reasoning starts from specific observations.（归纳推理从具体观察出发。）</li> <li>This device uses inductive charging for wireless power supply.（该设备采用感应充电实现无线供电。）</li> <li>The researcher adopted an inductive approach in the experiment.（研究者在实验中采用了归纳研究法。）</li> </ul> </details>
+<details> <summary>nuance</summary><h4>音标</h4><p>/ˈnjuːɑːns/</p> <h4>核心释义</h4><p>n. 细微差别；微妙之处；细腻感情</p> <h4>详细释义</h4> <ul> <li>指词义、语气、色彩、观点、情绪等不易察觉的**细微差异**。</li> <li>形容艺术、文字、表达中的细腻层次与微妙韵味。</li> <li>可引申为局势、人际关系里隐晦微妙的细节。</li> </ul> <h4>派生词</h4> <ul> <li>nuanced adj. 有细微差别的；细致入微的</li> <li>nuanceful adj. 富有微妙层次的</li> </ul> <h4>近义词</h4> <ul> <li>subtlety：微妙之处；细微精妙的特质</li> <li>distinction：差别；区分，侧重差异对比</li> <li>shade：细微差别，多指颜色、词义、看法</li> <li>finesse：细腻；精妙的分寸感</li> </ul> <h4>词组搭配</h4> <ul> <li>subtle nuance 细微差别</li> <li>cultural nuance 文化差异；文化微妙之处</li> <li>grasp the nuance 领会微妙含义</li> <li>shades and nuance 层次与细微差异</li> <li>linguistic nuance 语言细微差异</li> </ul> <h4>词源</h4> <p>源自法语 <i>nuance</i>（色调渐变、细微差异），最初用于描述色彩深浅的微弱变化，后拓展至语言、情感、思想等各类抽象层面的微妙区别。</p> <h4>同根词</h4> <ul> <li>nubile adj. 成熟的（同源古法语词根）</li> <li>nuage n. 云（法语同源词）</li> </ul> <h4>例句</h4> <ul> <li>It is hard to capture every nuance of his tone.（很难捕捉到他语气里的每一处微妙差别。）</li> <li>The two words are similar but have important nuances.（这两个单词意思相近，但存在关键细微差异。）</li> <li>She understands the cultural nuances of local communication.（她懂本地交流中的文化微妙之处。）</li> </ul> </details>
+<details> <summary>utilize</summary><h4>音标</h4><p>/ˈjuːtəlaɪz/</p> <h4>核心释义</h4><p>v. 利用；运用；使用</p> <h4>详细释义</h4> <ul> <li>正式书面用语，指充分、有效发挥人、事物、资源的价值与作用。</li> <li>侧重为达成特定目的而合理开发、活用各类条件与工具。</li> <li>区别于普通use，更强调**高效利用、物尽其用**的含义。</li> </ul> <h4>派生词</h4> <ul> <li>utilization n. 利用；使用率</li> <li>utilitarian adj. 功利的；实用的 n. 功利主义者</li> </ul> <h4>近义词</h4> <ul> <li>use：通用用词，使用范围最广，口语书面皆可</li> <li>employ：较正式，侧重投入人力、工具进行使用</li> <li>apply：侧重将理论、方法应用于实际场景</li> <li>exploit：侧重开发利用，含开采或贬义压榨之意</li> </ul> <h4>词组搭配</h4> <ul> <li>utilize resources 利用资源</li> <li>utilize data 运用数据</li> <li>fully utilize 充分利用</li> <li>utilize technology 借助科技</li> <li>utilize opportunities 把握并利用机遇</li> </ul> <h4>词源</h4> <p>源自拉丁语 <i>utilis</i>（有用的、有益的），经由法语传入英语，衍生出“使发挥用处”的动词含义，多用作学术、商务等正式文体。</p> <h4>同根词</h4> <ul> <li>utility n. 效用；实用；公共设施</li> <li>useful adj. 有用的；有益的</li> <li>utensil n. 用具；器皿</li> </ul> <h4>例句</h4> <ul> <li>We should utilize solar energy to protect the environment.（我们应利用太阳能来保护环境。）</li> <li>The team tried to utilize every advantage in the competition.（团队尽力在比赛中运用每一项优势。）</li> <li>This software helps users better utilize office time.（这款软件能帮助用户更好地利用办公时间。）</li> </ul> </details>
+<details> <summary>gauge</summary><h4>音标</h4><p>/ɡeɪdʒ/</p> <h4>核心释义</h4><p>v. 测量；评估；判断；估算  n. 测量仪器；规格；尺度；厚度</p> <h4>详细释义</h4> <ul> <li>动词：精准测算数值、大小，或估量局势、情绪、能力等抽象事物。</li> <li>名词：指压力表、量具等检测仪器，也可表示线材、板材的规格与口径。</li> <li>引申为衡量事物的标准、参照尺度。</li> </ul> <h4>派生词</h4> <ul> <li>gauged adj. 经过测量的；校准的</li> <li>gauging n. 测量；估量；标定</li> </ul> <h4>近义词</h4> <ul> <li>measure：通用测量，侧重尺寸、数量的计量</li> <li>assess：侧重综合评估价值、水平与状况</li> <li>estimate：粗略估算，强调近似判断</li> <li>evaluate：严谨评价、研判优劣与效果</li> </ul> <h4>词组搭配</h4> <ul> <li>gauge public opinion 估量公众舆论</li> <li>pressure gauge 压力表；气压计</li> <li>gauge the risk 评估风险</li> <li>railway gauge 铁轨轨距</li> <li>gauge one’s reaction 判断某人的反应</li> </ul> <h4>词源</h4> <p>源自古法语 <i>gauge</i>（测量杆、标准量器），最初用于手工行业计量尺寸规格，后逐步延伸出评估、判断等抽象含义，拼写亦作 gage。</p> <h4>同根词</h4> <ul> <li>engauge v. 啮合；校准（古体同源）</li> <li>overgauge adj. 超规格的；超标度的</li> </ul> <h4>例句</h4> <ul> <li>It is hard to gauge his true intention.（很难判断他的真实意图。）</li> <li>The sensor can gauge temperature and humidity accurately.（该传感器可精准测量温湿度。）</li> <li>People often use smile as a gauge of friendliness.（人们常把微笑当作友善的衡量标准。）</li> </ul> </details>
+<details> <summary>auxiliary</summary><h4>音标</h4><p>/ɔːɡˈzɪliəri/</p> <h4>核心释义</h4><p>adj. 辅助的；备用的；附属的  n. 辅助人员；辅助设备；助动词</p> <h4>详细释义</h4> <ul> <li>形容起协助、补充作用，非核心、主力的人或事物。</li> <li>工程、机械领域指备用、后备装置，用于应急补给。</li> <li>语法中专指**助动词**；军事、行政中指后备辅助人员。</li> </ul> <h4>派生词</h4> <ul> <li>auxiliarily adv. 辅助性地；备用性地</li> <li>auxiliar n. 辅助者；附属物（旧式写法）</li> </ul> <h4>近义词</h4> <ul> <li>assisting：协助的，起帮助作用的</li> <li>supplementary：补充的，增补性的</li> <li>subsidiary：附属的，次要的</li> <li>spare：备用的，应急待用的</li> </ul> <h4>词组搭配</h4> <ul> <li>auxiliary verb 助动词</li> <li>auxiliary equipment 辅助设备</li> <li>auxiliary power 备用电源；辅助动力</li> <li>auxiliary staff 辅助工作人员</li> <li>auxiliary fuel 备用燃料</li> </ul> <h4>词源</h4> <p>源自拉丁语 <i>auxilium</i>（援助、帮助），经由法语传入英语，最初用于军事语境表示援军，后拓展至通用、科技、语法等多领域，表辅助、备用含义。</p> <h4>同根词</h4> <ul> <li>auxilary adj. 辅助的（异体拼写）</li> <li>augment v. 增加；扩充（同拉丁语词根）</li> </ul> <h4>例句</h4> <ul> <li>We have an auxiliary generator for power cuts.（我们配有备用发电机应对停电。）</li> <li>"Can" and "will" are common auxiliary verbs.（can 和 will 是常见的助动词。）</li> <li>The hospital hired auxiliary workers to ease the burden.（医院雇佣辅助人员减轻工作负担。）</li> </ul> </details>
+<details> <summary>accumulate</summary><h4>音标</h4><p>/əˈkjuːmjəleɪt/</p> <h4>核心释义</h4><p>v. 积累；积聚；堆积；累积</p> <h4>详细释义</h4> <ul> <li>指事物长期逐步聚集、增多，由少变多的过程。</li> <li>可用于具象事物堆积，也可指财富、经验、知识、数据等抽象积累。</li> <li>科学语境中可表示物质、能量、杂质等不断蓄积。</li> </ul> <h4>派生词</h4> <ul> <li>accumulation n. 积累；堆积物；累积量</li> <li>accumulative adj. 累积的；渐增的</li> <li>accumulator n. 蓄电池；累加器；积聚者</li> </ul> <h4>近义词</h4> <ul> <li>gather：收集、聚拢，侧重主动汇集</li> <li>collect：有目的收集、收藏</li> <li>amass：大量积聚，多指财富、资源</li> <li>pile：具象物品堆叠、堆积</li> </ul> <h4>词组搭配</h4> <ul> <li>accumulate wealth 积累财富</li> <li>accumulate experience 积累经验</li> <li>accumulate dust 积灰；落满灰尘</li> <li>accumulate data 累积数据</li> <li>gradually accumulate 逐步累积</li> </ul> <h4>词源</h4> <p>源自拉丁语 <i>accumulare</i>，由 ad-（加强）+ cumulus（堆积、堆）构成，本义为层层堆叠，后引申为各类事物的长期累积。</p> <h4>同根词</h4> <ul> <li>cumulus n. 积云</li> <li>cumulative adj. 累积的；渐增的</li> </ul> <h4>例句</h4> <ul> <li>Dust will accumulate if the room is not cleaned regularly.（房间不常打扫就会积灰。）</li> <li>You need to read more to accumulate vocabulary.（你需要多阅读来积累词汇。）</li> <li>Over time, fat may accumulate around the waist.（久而久之，脂肪容易在腰部堆积。）</li> </ul> </details>
+<details> <summary>hydraulic</summary><h4>音标</h4><p>/haɪˈdrɔːlɪk/</p> <h4>核心释义</h4><p>adj. 液压的；水力的；水硬的</p> <h4>详细释义</h4> <ul> <li>指利用液体（尤指油）压力传递动力的**液压系统**相关。</li> <li>与水流、水力发电、水利工程等水资源动力相关。</li> <li>建材领域特指遇水硬化的水硬性材料。</li> </ul> <h4>派生词</h4> <ul> <li>hydraulics n. 水力学；液压系统</li> <li>hydraulically adv. 以液压方式；水力驱动地</li> </ul> <h4>近义词</h4> <ul> <li>pneumatic：气动的（液压对应气动）</li> <li>water-powered 水力驱动的</li> <li>fluid-driven 流体驱动的</li> </ul> <h4>词组搭配</h4> <ul> <li>hydraulic pressure 液压；水压</li> <li>hydraulic system 液压系统</li> <li>hydraulic engineering 水利工程</li> <li>hydraulic pump 液压泵</li> <li>hydraulic cement 水硬性水泥</li> </ul> <h4>词源</h4> <p>源自希腊语 <i>hydōr</i>（水）+ <i>aulos</i>（管道），本义为“水管输水的”，后拓展为水力、液压传动等现代工业含义。</p> <h4>同根词</h4> <ul> <li>hydrogen n. 氢</li> <li>hydrate n./v. 水合物；补水</li> <li>hydroelectric adj. 水电的</li> </ul> <h4>例句</h4> <ul> <li>This machine is controlled by a hydraulic device.（这台机器由液压装置控制。）</li> <li>Hydraulic power is widely used in heavy machinery.（液压动力广泛应用于重型机械。）</li> <li>The dam adopts advanced hydraulic design.（这座大坝采用先进的水利设计。）</li> </ul> </details>
+<details> <summary>sewage</summary><h4>音标</h4><p>/ˈsuːɪdʒ/</p> <h4>核心释义</h4><p>n. 污水；下水道污物；废水</p> <h4>详细释义</h4> <ul> <li>指城市、生活或工业产生的废弃脏水，包含粪便、杂物与污染物。</li> <li>专指经由下水道系统收集、输送的混合废水。</li> <li>多用于环保、市政、环境治理相关场景。</li> </ul> <h4>派生词</h4> <ul> <li>sewer n. 下水道；污水管道</li> <li>sewage-treatment n. 污水处理</li> </ul> <h4>近义词</h4> <ul> <li>wastewater n. 废水，使用范围最广</li> <li>drainage n. 排水；排水污物</li> <li>effluent n. 工业废水；排放污水</li> </ul> <h4>词组搭配</h4> <ul> <li>sewage treatment 污水处理</li> <li>sewage system 排污系统；下水道系统</li> <li>sewage pipe 污水管</li> <li>domestic sewage 生活污水</li> <li>industrial sewage 工业污水</li> </ul> <h4>词源</h4> <p>源自中古法语 <i>sewe</i>（排水沟），衍生词根 sewer（下水道），后形成 sewage，专门指代下水道中汇集的废弃污水。</p> <h4>同根词</h4> <ul> <li>sewerage n. 排水系统；污水处理设施</li> <li>sew v. 排泄（古义，现已分化）</li> </ul> <h4>例句</h4> <ul> <li>The factory is forbidden to discharge raw sewage into rivers.（工厂严禁向河流直排原生污水。）</li> <li>The city has built modern sewage treatment plants.（这座城市修建了现代化污水处理厂。）</li> <li>Untreated sewage will seriously pollute the environment.（未经处理的污水会严重污染环境。）</li> </ul> </details>
+<details> <summary>contingency</summary><h4>音标</h4><p>/kənˈtɪndʒənsi/</p> <h4>核心释义</h4><p>n. 意外事故；紧急情况；偶然性；应急预案</p> <h4>详细释义</h4> <ul> <li>指无法预料、突发的意外状况或紧急变故。</li> <li>表示事件发生的偶然性、不确定性。</li> <li>商务、管理领域常指提前制定的**应急备用方案**。</li> </ul> <h4>派生词</h4> <ul> <li>contingent adj. 偶然的；附带的；视情况而定的</li> <li>contingently adv. 偶然地；依条件地</li> </ul> <h4>近义词</h4> <ul> <li>emergency：突发紧急事件，强调危急程度</li> <li>emergence：突发状况、意外变故</li> <li>uncertainty：不确定性、变数</li> <li>eventuality：可能发生的意外结果</li> </ul> <h4>词组搭配</h4> <ul> <li>contingency plan 应急计划；备用方案</li> <li>contingency fund 应急资金；备用金</li> <li>in case of contingency 以防突发情况</li> <li>unforeseen contingency 突发意外</li> <li>contingency measure 应急措施</li> </ul> <h4>词源</h4> <p>源自拉丁语 contingere（接触、发生、偶遇），由 con-（共同）+ tangere（触碰）构成，本义为偶然发生之事，后引申为突发状况与应急对策。</p> <h4>同根词</h4> <ul> <li>contact n./v. 接触；联系</li> <li>tangible adj. 有形的；切实的</li> <li>tact n. 处事圆滑；分寸感</li> </ul> <h4>例句</h4> <ul> <li>We must prepare a contingency plan for possible power failure.（我们必须为可能的停电准备应急方案。）</li> <li>The company sets aside a budget for any unexpected contingency.（公司预留预算应对各类突发状况。）</li> <li>Success often depends on chance and contingency.（成功往往取决于机遇与偶然因素。）</li> </ul> </details>
+<details> <summary>feudalism</summary><h4>音标</h4><p>/ˈfjuːdlɪzəm/</p> <h4>核心释义</h4><p>n. 封建制度；封建主义</p> <h4>详细释义</h4> <ul> <li>中世纪欧洲为主的社会制度，以土地分封、领主与附庸的层级关系为核心。</li> <li>一种政治与经济结合的社会体系，强调等级特权、人身依附与土地私有。</li> <li>广义泛指封建时代的思想、文化与社会形态。</li> </ul> <h4>派生词</h4> <ul> <li>feudal adj. 封建的；封建制度的</li> <li>feudalistic adj. 封建主义的</li> </ul> <h4>近义词</h4> <ul> <li>feudal system 封建体制</li> <li>serfdom 农奴制</li> <li>aristocracy 贵族统治</li> </ul> <h4>词组搭配</h4> <ul> <li>ancient feudalism 古代封建制度</li> <li>the decline of feudalism 封建制度的衰落</li> <li>European feudalism 欧洲封建制</li> <li>feudalism society 封建社会</li> <li>overthrow feudalism 推翻封建主义</li> </ul> <h4>词源</h4> <p>源自拉丁语 <i>feodum</i>（封地、采邑），经由法语演变而来，18世纪正式形成该名词，专指中世纪分封式社会结构。</p> <h4>同根词</h4> <ul> <li>fief n. 封地；采邑</li> <li>feud n. 世仇；封地（古义）</li> </ul> <h4>例句</h4> <ul> <li>Feudalism dominated Europe for hundreds of years.（封建制度统治欧洲数百年。）</li> <li>The rise of trade gradually weakened feudalism.（贸易的兴起逐渐瓦解了封建制度。）</li> <li>Under feudalism, peasants had to obey their lords.（在封建制度下，农民必须服从领主。）</li> </ul> </details>
+    <div id="wordGrid" class="word-grid"></div>
 <dialog id="wordDialog">
         <div class="dialog-shell">
             <div class="dialog-header">
