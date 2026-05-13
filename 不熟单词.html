@@ -322,6 +322,30 @@
             transition: all 0.2s ease;
         }
 
+        .test-question-actions {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .test-reveal-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 999px;
+            background: #1f5d8f;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .test-reveal-btn:hover {
+            background: #173f5e;
+        }
+
         .test-mark-btn:hover {
             background: rgba(31, 93, 143, 0.2);
         }
@@ -335,6 +359,10 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+        }
+
+        .test-options.is-hidden {
+            display: none;
         }
 
         .test-option {
@@ -1478,9 +1506,12 @@
                     <div class="test-question">
                         <h3>请选择词汇的含义</h3>
                         <div class="test-word">${word.word}</div>
-                        <button type="button" class="test-mark-btn" id="testMarkBtn">标记此词</button>
+                        <div class="test-question-actions">
+                            <button type="button" class="test-mark-btn" id="testMarkBtn">标记此词</button>
+                            <button type="button" class="test-reveal-btn" id="showOptionsBtn">显示选项</button>
+                        </div>
                     </div>
-                    <div class="test-options" id="optionsContainer">
+                    <div class="test-options is-hidden" id="optionsContainer">
                         ${allAnswers.map((answer, idx) => `
                             <div class="test-option" data-index="${idx}" data-correct="${answer === word.shortMeaning}">
                                 ${answer}
@@ -1492,6 +1523,8 @@
                 `;
 
                 const testMarkBtn = document.getElementById("testMarkBtn");
+                const showOptionsBtn = document.getElementById("showOptionsBtn");
+                const optionsContainer = document.getElementById("optionsContainer");
                 const syncTestMarkBtn = () => {
                     const marked = isWordMarked(word.word);
                     testMarkBtn.textContent = marked ? "取消标记" : "标记此词";
@@ -1502,6 +1535,13 @@
                 testMarkBtn.addEventListener("click", () => {
                     setMarkedState(word.word, !isWordMarked(word.word));
                     syncTestMarkBtn();
+                });
+
+                showOptionsBtn.addEventListener("click", () => {
+                    optionsContainer.classList.remove("is-hidden");
+                    showOptionsBtn.disabled = true;
+                    showOptionsBtn.style.opacity = "0.6";
+                    showOptionsBtn.style.cursor = "default";
                 });
 
                 // 选项点击事件
